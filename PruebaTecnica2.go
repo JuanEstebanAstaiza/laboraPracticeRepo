@@ -1,5 +1,6 @@
-/*package main
+package main
 
+/*
 import "fmt"
 
 // Estructura para representar un producto
@@ -80,8 +81,6 @@ func main() {
 
 //ejercicio 2
 
-/*package main
-
 import "fmt"
 
 // Estructura para representar una tarea
@@ -93,8 +92,8 @@ type Tarea struct {
 }
 
 // Función para crear una nueva tarea
-func crearTarea(nombre, descripcion, responsable string) Tarea {
-	nuevaTarea := Tarea{
+func crearTarea(nombre, descripcion, responsable string) *Tarea {
+	nuevaTarea := &Tarea{
 		Nombre:      nombre,
 		Descripcion: descripcion,
 		Responsable: responsable,
@@ -109,7 +108,7 @@ func actualizarEstado(tarea *Tarea, nuevoEstado string) {
 }
 
 // Función para mostrar todas las tareas pendientes
-func mostrarTareasPendientes(tareas []Tarea) {
+func mostrarTareasPendientes(tareas []*Tarea) {
 	fmt.Println("Tareas Pendientes:")
 	for _, tarea := range tareas {
 		if tarea.Estado == "pendiente" {
@@ -125,14 +124,14 @@ func main() {
 	tarea3 := crearTarea("Depurar errores en la base de datos", "Investigar y solucionar errores en la base de datos de producción", "Pedro")
 
 	// Mostrar las tareas pendientes
-	tareas := []Tarea{tarea1, tarea2, tarea3}
+	tareas := []*Tarea{tarea1, tarea2, tarea3}
 	mostrarTareasPendientes(tareas)
 
 	// Actualizar el estado de una tarea
-	actualizarEstado(&tarea1, "en progreso")
+	actualizarEstado(tarea1, "en progreso")
 	fmt.Println("\nDespués de actualizar el estado de una tarea:")
 	mostrarTareasPendientes(tareas)
-}*/
+}
 
 //ejercicio 3
 
@@ -243,7 +242,7 @@ func main() {
 
 //ejercicio 4
 
-package main
+/*package main
 
 import "fmt"
 
@@ -342,4 +341,4 @@ func main() {
 
 	// Mostrar la agenda después de eliminar un contacto
 	mostrarAgenda(agenda)
-}
+}*/
