@@ -1,7 +1,6 @@
 package main
 
-/*
-import "fmt"
+/*import "fmt"
 
 // Estructura para representar un producto
 type Producto struct {
@@ -79,8 +78,6 @@ func main() {
 	mostrarInventario(inventario)
 }*/
 
-//ejercicio 2
-
 /*import "fmt"
 
 // Estructura para representar una tarea
@@ -133,11 +130,7 @@ func main() {
 	mostrarTareasPendientes(tareas)
 }*/
 
-//ejercicio 3
-
-/*package main
-
-import "fmt"
+/*import "fmt"
 
 // Estructura para representar un libro
 type Libro struct {
@@ -240,11 +233,7 @@ func main() {
 	mostrarColeccion(coleccion)
 }*/
 
-//ejercicio 4
-
-/*package main
-
-import "fmt"
+/*import "fmt"
 
 // Estructura para representar un contacto
 type Contacto struct {
