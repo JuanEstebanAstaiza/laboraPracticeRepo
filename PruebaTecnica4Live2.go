@@ -1,6 +1,6 @@
 package main
 
-import (
+/*import (
 	"fmt"
 	"math/rand"
 	"sync"
@@ -54,7 +54,7 @@ func main() {
 	//Esperamos a que terminen
 
 	wg.Wait()
-}
+}*/
 
 /*
 
